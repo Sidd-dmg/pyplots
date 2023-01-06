@@ -4,7 +4,7 @@ import pandas as pd
 
 app = Dash(__name__)
 
-_pltdata = pd.read_csv('D:\\Project_TeamPower\\webdevelopment\\New folder\\_week2.csv',sep=",")
+_pltdata = pd.read_csv('_week2.csv',sep=",")
 
 
 
@@ -21,7 +21,7 @@ app.layout = html.Div([
     Output("graph", "figure"), 
     Input("dropdown", "value"))
 def update_line_chart(val_chosen):
-    pltdata = pd.read_csv('D:\\Project_TeamPower\\webdevelopment\\New folder\\_week2.csv',sep=',') # replace with your own data source
+    pltdata = pd.read_csv('_week2.csv',sep=',') # replace with your own data source
     para=val_chosen
     print(para)
     fig = px.line(pltdata, x='time', y=para)
