@@ -31,6 +31,6 @@ def update_line_chart(val_chosen):
                    height=800, width= 1900)
     return fig
 
-
-app.run_server(debug=True)
+if __name__ == "__main__":
+    app.run_server(debug=True)
 
