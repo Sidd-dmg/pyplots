@@ -50,5 +50,5 @@ def update_line_chart(dropdown,dates):
     return fig
 
 
-app.run_server(debug=True)
+app.run_server(debug=False)
 
