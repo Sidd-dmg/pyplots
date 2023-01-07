@@ -27,7 +27,7 @@ app.layout = html.Div([
 def update_line_chart(dropdown,dates):
     push_date = "indouk_4_"+str(dates)+".txt"
 
-    path= "/data/" + push_date # Plz add github file locatio path in "".in this kind of format 'D:\\Project_TeamPower\\webdevelopment\\New folder\\_week2.csv'
+    path= "data/" + push_date # Plz add github file locatio path in "".in this kind of format 'D:\\Project_TeamPower\\webdevelopment\\New folder\\_week2.csv'
 
     data_write = 'time,meter,Ptot,Pr,Py,Pb,Pfavg,Pfr,Pfy,Pfb,St,Sr,Sy,Sb,Vlavg,Vry,Vyb,Vbr,Vlnavg,Vr,Vy,Vb,Itot,Ir,Iy,Ib,freq,Energy,vah'
 
