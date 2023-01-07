@@ -27,8 +27,8 @@ def update_line_chart(val_chosen):
     print(para)
     fig = px.line(pltdata, x='time', y=para)
     fig.update_layout(
-                   plot_bgcolor='rgb(230, 230,230)',
-                   showlegend=True)
+                   showlegend=True,
+                   height = 800)
     return fig
 
 if __name__ == "__main__":
