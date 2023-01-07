@@ -12,7 +12,7 @@ app.layout = html.Div([
     html.H1('Data Analysis of Electricity Consumption. '),
     html.I("Select the date for ploting.[format:YYYY-MM-DD]"),
     html.Br(),
-    dcc.Input(id="dates", type="text", placeholder=""),
+    dcc.Input(id="dates", type="text", placeholder="", debounce=True ,value="2022-10-01"),
     dcc.Dropdown(_pltdata, id='dropdown'),
     dcc.Graph(id="graph"),
     #html.Div(id='pandas-output-container-1')
